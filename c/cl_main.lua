@@ -31,6 +31,7 @@ CreateThread(function()
                             Wait(math.random(200, 700))
                             local pos2 = GetEntityCoords(ped)
                             AddExplosion(pos2.x, pos2.y, pos2.z, 32, 5.0, true, false, 1.0, false)
+                            brake
                         else
                             AddExplosion(pos.x + math.random(-1, 1), pos.y + math.random(-1, 1), pos.z, 32, 5.0, true, false, 1.0, false)
                         end
