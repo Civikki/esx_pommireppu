@@ -26,7 +26,7 @@ CreateThread(function()
                 TriggerServerEvent('esx_pommireppu:SusImposter', pos.x, pos.y, pos.z)
                 local rajahdus = 0
                 CreateThread(function()
-                    while rajahdus < 3 do
+                    while rajahdus < Config.Rajahdukset do
                         if rajahdus == 0 then
                             Wait(math.random(200, 700))
                             local pos2 = GetEntityCoords(ped)
